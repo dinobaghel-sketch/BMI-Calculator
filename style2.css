@@ -1,0 +1,28 @@
+.underweight-color {
+  background-color: #4aa0e1;
+  color: white;
+}
+.normal-color {
+  background-color: #88c24a;
+  color: white;
+}
+.overweight-color {
+  background-color: #ffd600;
+  color: white;
+}
+.obese-color {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* gender color change  */
+
+.gender-btn.active-male {
+  background-color: #87ceeb;
+  color: #000;
+}
+
+.gender-btn.active-female {
+  background-color: #ffb6c1;
+  color: #000;
+}

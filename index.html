@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css"/>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="heading">BMI INDEX Calculator</div>
+      <div class="column">
+        <div class="content">
+          <div class="Attributes">
+            <label for="age">Age:</label>
+            <input type="number" id="age" class="content-input" min="0" placeholder="Enter your age" />
+          </div>
+          <div class="Attributes">
+            <label for="gender">Gender:</label>
+            <div class="gender-btn-container">
+              <button class="gender-btn" id="male">Male</button>
+              <button class="gender-btn" id="female">Female</button>
+            </div>
+
+            <!-- <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select> -->
+          </div>
+          <div class="Attributes">
+            <label for="height">Height:</label>
+            <input
+              type="number"
+              id="height"
+              class="content-input"
+              min="0"
+              placeholder="Enter Your Height in cm"
+            />
+          </div>
+          <div class="Attributes">
+            <label for="weight">Weight:</label>
+            <input
+              type="number"
+              id="weight"
+              class="content-input"
+              min="0"
+              placeholder="Enter Your Weight in kg"
+            />
+          </div>
+        </div>
+
+        <!-- new div for result -->
+        <div class="result">
+          <h1>Result:</h1>
+          <div class="result-content">
+            <div class="result-attributes">
+              <label for="bmi">BMI:</label>
+              <input type="text" id="bmi" readonly />
+            </div>
+            <div class="result-attributes">
+              <label for="category">Category:</label>
+              <input type="text" id="category" readonly />
+            </div>
+        </div>
+      </div>
+
+      <!-- 3 div for calc-clear btn-->
+    </div>
+    <div class="clc-clear-btn-container">
+      <button onclick="validateInputs()" class="action-btn" id="calculate">Calculate</button>
+      <button class="action-btn" id="clear">Clear</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
